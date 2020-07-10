@@ -14,6 +14,7 @@ module.exports = {
 };
 
 function find(query) {
+  // default values //
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);
 
