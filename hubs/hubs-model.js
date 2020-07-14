@@ -2,6 +2,8 @@ const knex = require('knex');
 const config = require('../knexfile.js');
 const db = knex(config.development);
 
+
+// helper methods (peristence helpers)
 module.exports = {
   find,
   findById,
